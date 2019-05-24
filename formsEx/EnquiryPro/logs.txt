@@ -1,0 +1,104 @@
+django-admin startproject EnquiryPro
+python manage.py startapp EnquiryApp
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+userName/Pwd == django/1234abcd
+
+python manage.py runserver 0.0.0.0:8888
+
+
+models
+======
+
+EnquiryData
+name
+email
+mobile
+course
+trainer
+branch
+gender
+date
+
+
+    COURSES_CHOIES=(
+        ('py','PYTHON'),
+        ('dj','DJANGO'),
+        ('ui','UI'),
+        ('ra','RESTAPI')
+    )
+TRAINERS_CHOICES=(
+        ('RAMYA','ramya'),
+        ('SAI','sai'),
+        ('KESAV','kesav')
+    )
+BRANCHES_CHOICES=(
+        ('srnagar','SR NAGAR'),
+        ('madpur','MADHAPUR'),
+        ('kphb','KPHB')
+    )
+
+GENDER_CHOICES=(
+        ('Male','male'),
+        ('Female','female')
+    )
+
+forms
+=====
+EnquiryForm
+name
+email
+mobile
+course
+trainer
+branch
+gender
+date
+
+    COURSES_CHOIES=(
+        ('py','PYTHON'),
+        ('dj','DJANGO'),
+        ('ui','UI'),
+        ('ra','RESTAPI')
+    )
+TRAINERS_CHOICES=(
+        ('RAMYA','ramya'),
+        ('SAI','sai'),
+        ('KESAV','kesav')
+    )
+BRANCHES_CHOICES=(
+        ('srnagar','SR NAGAR'),
+        ('madpur','MADHAPUR'),
+        ('kphb','KPHB')
+    )
+
+GENDER_CHOICES=(
+        ('Male','male'),
+        ('Female','female')
+    )
+
+
+view
+====
+
+enquiryview
+
+name
+email
+mobile
+course
+trainer
+branch
+gender
+date
+
+
+Db
+====
+
+create database Enquirydb;
+DROP DATABASE Enquirydb;
+use Enquirydb;
+mysql> show tables;

@@ -1,0 +1,30 @@
+
+models
+=======
+name
+loc
+email
+number
+
+
+
+MYSQL DB
+=========
+addressdb
+
+
+django-admin startproject addresspro
+python manage.py startapp addressapp
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+userName/Pwd == django/1234abcd
+
+python manage.py runserver 0.0.0.0:8888
+
+
+create database addressdb;
+DROP DATABASE addressdb;
+use addressdb;
+mysql> show tables;

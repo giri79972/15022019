@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CustomerData</title>
+<style>
+    th{
+        font-size: 25px;
+        font-family: cursive;
+        color: red;
+    }
+    h2{
+        text-align: center;
+        font-family: cursive;
+        color: blue;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+</head>
+<body>
+<h2>Customer Details</h2>
+<form method="POST">
+    {% csrf_token %}
+    <center>
+    <table>
+        <tr>
+            <th>Enter Your Name:</th>
+            <td> <input type="text" name="cname" placeholder="Your Name">  </td>
+        </tr>
+        <tr>
+            <th>Enter Your Mobile:</th>
+            <td> <input type="number" name="mobile" placeholder="Your Number">  </td>
+        </tr>
+        <tr>
+            <th>Enter Your Email:</th>
+            <td> <input type="email" name="email" placeholder="Your Email"> </td>
+        </tr>
+        <tr>
+            <th>Enter Your Age:</th>
+            <td><input type="number" name="age" placeholder="Your Age"></td>
+        </tr>
+        <tr>
+            <th>Enter Your Sales: </th>
+            <td><input type="number" name="sales" placeholder="Your Sales"></td>
+        </tr>
+        <tr>
+            <th>Enter Your Location:</th>
+            <td><input type="text" name="loc" placeholder="Your Location"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><center><input type="submit" value="Submit"></center></td>
+        </tr>
+    </table>
+        </center>
+</form>
+</body>
+</html>
